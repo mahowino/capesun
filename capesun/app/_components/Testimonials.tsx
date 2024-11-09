@@ -10,7 +10,7 @@ const StarRating = () => (
     </>
 );
 
-const TestimonialCard = ({ testimonial }:any) => (
+const TestimonialCard = ({ testimonial }:{ key: number; testimonial: { message: string; name: string; role: string; image: string; }; }) => (
     <div className="flex flex-col overflow-hidden shadow-xl">
         <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
             <div className="flex-1">

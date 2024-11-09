@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomNavbar from './CustomNavbar';
 
 const HeroSection = () => {
   return (
@@ -16,7 +15,7 @@ const HeroSection = () => {
     Discover the True Worth of Every Ride
 </h1>
 <p className="mt-2 text-lg text-secondary sm:mt-8 font-inter">
-    Unlock accurate valuations and insights to confidently know your vehicle's value in today’s market.
+    Unlock accurate valuations and insights to confidently know your vehicles value in todays market.
 </p>
 
               </div>

@@ -12,7 +12,7 @@ const WhoAreWeContent: React.FC = () => {
       <TextParagraph className="mb-3">
       The company is known for its commitment to providing accurate, reliable, and professional assessments, from accident damage reports to comprehensive vehicle valuations. With a reputation built on trust, integrity, and in-depth industry knowledge, Cape Sun ensures that every assessment is conducted with the utmost professionalism, using the latest technology and adhering to industry best practices.      </TextParagraph>
       <TextParagraph className="mb-3">
-    Beyond assessments, Cape Sun Motor Assessors and Valuers Limited prioritizes client satisfaction by delivering timely and detailed reports, enabling clients to make informed decisions with confidence. Our team of seasoned professionals is dedicated to going above and beyond, ensuring every client receives personalized attention and insights tailored to their unique needs. Whether you're an insurance provider, individual vehicle owner, or corporate client, Cape Sun is your trusted partner for unmatched service quality and precision in vehicle assessment and valuation across Kenya.
+    Beyond assessments, Cape Sun Motor Assessors and Valuers Limited prioritizes client satisfaction by delivering timely and detailed reports, enabling clients to make informed decisions with confidence. Our team of seasoned professionals is dedicated to going above and beyond, ensuring every client receives personalized attention and insights tailored to their unique needs. Whether you are an insurance provider, individual vehicle owner, or corporate client, Cape Sun is your trusted partner for unmatched service quality and precision in vehicle assessment and valuation across Kenya.
 </TextParagraph>
 
     </div>

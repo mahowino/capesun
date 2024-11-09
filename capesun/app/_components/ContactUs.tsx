@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
         setStatus(result.message || 'Failed to send message.');
       }
     } catch (error) {
-      setStatus('An unexpected error occurred.');
+      setStatus('An unexpected error occurred.'+error);
     } finally {
       setLoading(false);
     }

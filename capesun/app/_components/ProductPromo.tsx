@@ -20,7 +20,7 @@ const ProductPromo = () => {
             and get best value for money
           </h1>
           <p className="mb-6 text-gray-500 dark:text-gray-400">
-            Reserve an appointment with us today and enjoy exclusive savings with qualified activation. We can't wait to hear from you.
+            Reserve an appointment with us today and enjoy exclusive savings with qualified activation. We cannot wait to hear from you.
           </p>
           <a
             href="#"
