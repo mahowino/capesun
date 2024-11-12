@@ -27,6 +27,7 @@ const helpLinks = [
 
 const featuresData = [
   {
+    index:0,
     title: "Vehicle Accident Assessment",
     description: "Detailed post-accident assessments to determine the extent of damage, repair costs, and the cause of the accident.",
     iconPath: (
@@ -41,6 +42,8 @@ const featuresData = [
     ),
   },
   {
+    index:1,
+
     title: "Underwriting Support",
     description: "Pre-underwriting valuations to support insurance underwriting decisions. ",
     iconPath: (
@@ -55,6 +58,8 @@ const featuresData = [
     ),
   },
   {
+    index:2,
+
     title: "Risk Assessment",
     description: "Property risk assessment to evaluate risks for insurance or business planning. ",
     iconPath: (
@@ -69,6 +74,8 @@ const featuresData = [
     ),
   },
   {
+    index:3,
+
     title: "Motor Vehicle Valuation",
     description: "Independent valuations for cars, motorcycles, trucks, and commercial vehicles for insurance, resale, or purchase. ",
     iconPath: (
@@ -83,6 +90,8 @@ const featuresData = [
     ),
   },
   {
+    index:4,
+
     title: "Property Appraisal",
     description: "Comprehensive damage assessments for property. ",
     iconPath: (
@@ -97,6 +106,7 @@ const featuresData = [
     ),
   },
   {
+    index:5,
     title: "Asset Valuation",
     description: "Motor vehicle valuations for insurance or bank purposes. ",
     iconPath: (
