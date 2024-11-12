@@ -25,7 +25,7 @@ export default {
         accent: '#F16638', 
       },
       fontFamily: {
-        asar: ['Montserrant', 'serif'], 
+        montserrant: ['Montserrant', 'serif'], 
       },
     },
   },

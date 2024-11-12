@@ -30,7 +30,7 @@ const CustomNavbar = () => {
       to={to}
       smooth={true}
       duration={500}
-      className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out hover:text-accent"
+      className="text-gray-700  rounded-md text-sm font-medium transition-colors duration-200 ease-in-out hover:text-accent"
       style={{ position: 'relative', zIndex: 10 }}
     >
       {children}
