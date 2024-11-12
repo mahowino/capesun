@@ -61,7 +61,7 @@ const HeroSection = () => {
 
             <div className="lg:col-span-2 relative">
   {/* Image */}
-  <div className="lg:absolute lg:top-[-80px] scale-125 right-10 flex justify-center items-start rounded-lg overflow-hidden">
+  <div className="lg:absolute lg:top-[-80px] lg:scale-125 lg:right-10 flex justify-center items-start rounded-lg overflow-hidden">
     <img
       className="max-w-full h-96 object-contain rounded-lg shadow-lg"
       src="/assets/interior.jpg"

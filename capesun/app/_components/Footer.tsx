@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({
                                     <a
                                         href={link.href}
                                         title={link.title}
-                                        className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                                        className="flex items-center justify-center text-black transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-accent focus:bg-accent"
                                     >
                                         <svg
                                             className="w-4 h-4"
@@ -73,7 +73,7 @@ const Footer: React.FC<FooterProps> = ({
                                 <li key={link.title}>
                                     <a
                                         href={link.href}
-                                        className="flex text-base text-black transition-all duration-200 hover:text-secondary "
+                                        className="flex text-base text-black transition-all duration-200 hover:text-accent "
                                     >
                                         {link.title}
                                     </a>
@@ -90,7 +90,7 @@ const Footer: React.FC<FooterProps> = ({
                                     <a
                                         href={link.href}
                                         title={link.title}
-                                        className="flex text-base text-black transition-all duration-200 hover:text-secondary"
+                                        className="flex text-base text-black transition-all duration-200 hover:text-accent"
                                     >
                                         {link.title}
                                     </a>

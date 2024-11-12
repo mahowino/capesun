@@ -1,3 +1,5 @@
+"use client"
+
 import CustomNavbar from "./_components/CustomNavbar";
 import HeroSection from "./_components/HeroSection";
 import FeaturesSection from "./_components/FeaturesSection";
@@ -10,16 +12,19 @@ import Faq from "./_components/Faq";
 import ContactForm from "./_components/ContactUs";
 import Footer from "./_components/Footer";
 import AdditionalImageCard from "./_components/AdditionalImageCard";
+import styles from './home.module.css';
+import { Link } from "react-scroll";
+
 
 const companyLinks = [
   { title: 'About Us', href: '#who-are-we' },
-  { title: 'Our clients', href: '#contact' },
-  { title: 'Our Services', href: '#team' },
+  { title: 'Our clients', href: '#clients' },
+  { title: 'Our Services', href: '#services' },
 ];
 
 const helpLinks = [
-  { title: 'Testimonials', href: '#gallery' },
-  { title: 'Talk to sales', href: '#statistics' },
+  { title: 'Testimonials', href: '#testimonials' },
+  { title: 'Talk to sales', href: '#contact' },
 ];
 
 const featuresData = [
@@ -113,34 +118,57 @@ export default function Home() {
   return (
     <div className=" bg-secondary text-black">
             <CustomNavbar />
+            <div id="hero-section">
+
       <HeroSection/>
-      <div id="who-are-we" >
+      </div>
+
+      <div id="who-are-we"  className="p-10">
         <TwoToOneLayout
           mainContent={<WhoAreWeContent />}
           sidebarContent={<ValuesSection />}
         />
       </div>
 
-      <div id="who-are-we"  className="bg-primary">
+      <div id="clients"  className="bg-primary">
         <TwoToOneLayout
           mainContent={<Faq/>}
           sidebarContent={<AdditionalImageCard imageSrc={"/assets/car.jpg"} />}
         />
       </div>
 
+      <div id="services" >
+
       <FeaturesSection
   title="Our Services and Solutions"
   description="Explore our range of expert services designed to meet your needs with precision, quality, and reliability."
   features={featuresData}
 />
+</div>
 
+
+<div id="testimonials" >
 
       <Testimonials/>
+      </div>
+
+      <div id="contact" >
+
       <ContactForm/>
+      </div>
+
+      <div id="product" >
+
       <ProductPromo/>
-      
+      </div>
+
       <Footer logoSrc={"/assets/logo_1.jpg"} logoAlt={"capesun"} description={""} socialLinks={[]} companyLinks={companyLinks} helpLinks={helpLinks}/>
     
+      <div >
+        <Link to="hero-section" smooth={true} duration={500} className={styles.scrollToTop}>
+          Back to Top
+        </Link>
+      </div>
     </div>
   );
 }
