@@ -9,7 +9,7 @@ const CustomNavbar = () => {
     { name: 'About us', href: 'who-are-we' },
     { name: 'Our clients', href: 'clients' },
     { name: 'Our Services', href: 'services' },
-    { name: 'Testimonials', href: 'testimonials' },
+   // { name: 'Testimonials', href: 'testimonials' },
     { name: 'contact us', href: 'contact' },
 
   ];

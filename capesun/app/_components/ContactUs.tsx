@@ -57,10 +57,10 @@ const ContactForm: React.FC = () => {
   return (
     <section className="bg-primary">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Want to have a session? Have an issue to communicate? Want a plan and figure out pricing? Let us Know</p>
-        {status && <p className="text-center text-gray-500 dark:text-gray-400">{status}</p>}
-        {loading && <p className="text-center text-gray-500 dark:text-gray-400">Sending...</p>}
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Us</h2>
+        <p className="mb-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">Want to have a session? Have an issue to communicate? Want a plan and figure out pricing? Let us Know</p>
+        {status && <p className="text-center text-gray-400">{status}</p>}
+        {loading && <p className="text-center text-accent">Sending...</p>}
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-accent ">Your email</label>
@@ -99,7 +99,7 @@ const ContactForm: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className="py-3 px-5 text-sm font-medium text-center text-white hover:text-accent rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             disabled={loading}
           >
             {loading ? 'Sending...' : 'Send message'}
