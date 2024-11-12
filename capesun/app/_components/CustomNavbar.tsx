@@ -30,7 +30,7 @@ const CustomNavbar = () => {
       to={to}
       smooth={true}
       duration={500}
-      className="text-gray-700  rounded-md text-sm font-medium transition-colors duration-200 ease-in-out hover:text-accent"
+      className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out hover:text-accent"
       style={{ position: 'relative', zIndex: 10 }}
     >
       {children}
@@ -39,12 +39,19 @@ const CustomNavbar = () => {
   
  
 
-  const renderNavLinks = () =>
-    navLinks.map((link) => (
+
+const Menu: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => (
+  <div className={`flex   cursor-pointer ${isMobile ? 'flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3' : 'ml-10 items-baseline space-x-4'} `}>
+    { navLinks.map((link) => (
      
-       <MenuItem key={link.name} to={link.href}>{link.name}</MenuItem>
-      
-    ));
+     <MenuItem key={link.name} to={link.href}>{link.name}</MenuItem>
+    
+  ))
+
+}
+  </div>
+);
+   
 
   return (
     <header className="pb-6 bg-white lg:pb-0 fixed w-full z-20">
@@ -88,7 +95,7 @@ const CustomNavbar = () => {
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-            {renderNavLinks()}
+          <Menu  />
           </div>
 
           <Link to="contact" smooth={true} duration={500} className={`hidden lg:inline-flex ml-10 ${mainButtonClasses}`} role="button">
@@ -100,9 +107,9 @@ const CustomNavbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <nav className="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
-            <div className="flow-root">
-              <div className="flex flex-col px-6 -my-2 space-y-1">
-                {renderNavLinks()}
+            <div className="flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div className="flex flex-col px-6 pt-2 pb-2 space-y-1">
+              <Menu isMobile />
               </div>
             </div>
 
