@@ -33,13 +33,13 @@ const WhoAreWeContent: React.FC = () => {
       animate={isInView ? "visible" : "hidden"}
     >
       <motion.h1 
-        className="text-6xl pt-10 font-bold mb-3 lg:text-6xl font-pj"
+        className="text-4xl pt-10 font-bold mb-3 lg:text-6xl font-pj"
         variants={item}
       >
         Surprisingly Fast
       </motion.h1>
       <motion.h1 
-        className="text-6xl font-bold mb-3 lg:text-6xl font-pj"
+        className="text-4xl font-bold mb-3 lg:text-6xl font-pj"
         variants={item}
       >
         Turnaround
